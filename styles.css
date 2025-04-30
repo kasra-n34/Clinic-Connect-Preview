@@ -1,0 +1,194 @@
+#map {
+    height: 90vh;
+    width: 100%;
+  }
+  
+  #sidebar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 5;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #sidebar h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  #saved-addresses {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #saved-addresses li {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #saved-addresses button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  
+  #clear-saved {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  #clear-saved:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Controls container */
+  #controls {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    z-index: 5;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #location-controls,
+  #density-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #controls input {
+    padding: 5px;
+    flex: 1;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #controls button {
+    padding: 5px 10px;
+    cursor: pointer;
+    flex: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+  }
+  
+  #controls button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #toggle-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  /* Default (off) state */
+#toggle-button.toggle-off {
+    background-color: #f8f8f8; /* Light gray */
+    color: #000; /* Black text */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* On state */
+  #toggle-button.toggle-on {
+    background-color: #4caf50; /* Green */
+    color: #fff; /* White text */
+    border: 1px solid #4caf50;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  #toggle-button:hover {
+    background-color: #e0e0e0; /* Slightly darker for off state */
+  }
+  #toggle-button.toggle-on:hover {
+    background-color: #45a049; /* Slightly darker green for on state */
+  }
+  
+
+  #legend {
+  position: absolute;
+  bottom: 80px; /* Adjust position as needed */
+  left: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  z-index: 1000; /* Ensure it's above the map */
+}
+
+#legend h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+#legend ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#legend li span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+

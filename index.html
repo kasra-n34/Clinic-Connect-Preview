@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ontario Map with GeoJSON Overlay</title>
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB71hxUE4-WLtIoL-DThyCjd4cRISmJogU&libraries=places"></script>
+  <!-- MarkerClusterer Library -->
+  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="sidebar">
+    <h3>Saved Addresses</h3>
+    <ul id="saved-addresses"></ul>
+    <button id="clear-saved">Clear All</button>
+  </div>  
+  <div id="controls">
+    <div id="location-controls">
+      <input type="text" id="home-location" placeholder="Enter your home location">
+      <button id="set-location">Set Home Location</button>
+      <input type="number" id="radius" placeholder="Radius (km)">
+      <button id="apply-radius-filter">Apply Radius Filter</button>
+      <button id="clear-radius-filter">Clear Radius Filter</button>
+    </div>
+    <div id="density-controls">
+      <input type="number" id="min-density" placeholder="Min Density">
+      <input type="number" id="max-density" placeholder="Max Density">
+      <button id="apply-density-filter">Apply Filter</button>
+      <button id="clear-density-filter">Clear Filter</button>
+    </div>
+  </div>
+  <div id="map"></div>
+  <div id="legend">
+    <h4>Population Density</h4>
+    <ul id="legend-content"></ul>
+  </div>
+  <div id="toggle-button" class="toggle-off">Show Population Density Overlay</div>
+  <script src="ClinicReconFunctions.js"></script>
+</body>
+</html>
