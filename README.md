@@ -6,6 +6,14 @@ The tool integrates real-time mapping, traffic analysis, and public census data 
 
 > ⚠️ **Note**: Certain code segments and data files have been omitted from this public version due to confidentiality agreements.
 
+## Preview - Basic Test Version
+
+
+
+https://github.com/user-attachments/assets/743dc5a5-3f41-4d3d-988b-6a007eae9260
+
+
+
 ---
 
 ## 🔍 Features
